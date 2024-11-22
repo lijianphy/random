@@ -12,8 +12,8 @@ double randn(rng_t *rng)
     do
     {
         /* choose x,y in uniform square (-1,-1) to (+1,+1) */
-        x = -1 + 2 * next_double(rng);
-        y = -1 + 2 * next_double(rng);
+        x = -1.0 + 2.0 * next_double(rng);
+        y = -1.0 + 2.0 * next_double(rng);
 
         /* see if it is in the unit circle */
         r2 = x * x + y * y;
